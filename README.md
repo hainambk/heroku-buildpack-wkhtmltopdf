@@ -21,9 +21,9 @@
 ##  About <a name = "about"></a>
 
 This buildpack downloads and extracts the
-[wkhtmltopdf](https://wkhtmltopdf.org/) binaries and works on `heroku-18`, `heroku-20` and `heroku-22` stacks.
+[wkhtmltopdf](https://wkhtmltopdf.org/) binaries and works on `heroku-18`, `heroku-20`, `heroku-22`, `heroku-24` stacks.
 
-- This buildpack downloads wkhtmltopdf v0.12.6.1-2 for `heroku-22`, v0.12.6-1 for `heroku-20` stack and v0.12.5 for `heroku-18` stack.
+- This buildpack downloads wkhtmltopdf v0.12.6.1-2 for `heroku-24` and `heroku-22`, v0.12.6-1 for `heroku-20` stack and v0.12.5 for `heroku-18` stack.
 - This buildpack can bypass stack detection if the url to the wkhtmltopdf binary is provided through Aptfile.
 
 ## Changelog <a name = "changelog"></a>
@@ -39,10 +39,13 @@ This buildpack downloads and extracts the
     - Added support for `Heroku-22`
     - Added support for bypassing stack detection.
 
+- v4
+    - Added support for `Heroku-24`
+
 ## Features <a name = "feature"></a>
 - Downloads wkhtmltopdf binaries from [wkhtmltopdf.org](http://wkhtmltopdf.org)
 - It doesnot add new environment variables or shell scripts.
-- Tested on `heroku-22`, `heroku-20` and `heroku-18`stack images.
+- Tested on `heroku-24`, `heroku-22`, `heroku-20` and `heroku-18`stack images.
 - It allows you to specify a custom or the latest version of wkhtmltopdf package for your app on Heroku. [Aptfile](#aptfile).
 
 ## Getting Started <a name = "getting_started"></a>
